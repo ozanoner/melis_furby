@@ -1,9 +1,11 @@
 #include <Arduino.h>
+#include "Eyes.hpp"
 
+Eyes eyes;
 void setup() {
-    // put your setup code here, to run once:
+  eyes.init();
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
+  eyes.update();
 }
